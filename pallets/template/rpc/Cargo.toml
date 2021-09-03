@@ -1,0 +1,28 @@
+[package]
+name = "get-something-rpc"
+version = "3.0.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+jsonrpc-core = "15.0"
+jsonrpc-derive = "15.0"
+jsonrpc-core-client = "15.0"
+something-runtime-api = { version = "3.0.0", path = "../runtime-api", default-features = false }
+
+[dependencies.sp-api]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-07'
+version = '3.0.0'
+
+[dependencies.sp-blockchain]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-07'
+version = '3.0.0'
+
+[dependencies.sp-runtime]
+default-features = false
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-07'
+version = '3.0.0'
